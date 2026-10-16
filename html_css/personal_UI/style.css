@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(114, 196, 237);
+    padding: 40px;
+}
+h1{
+    text-align:center;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.subTitle_1{
+    text-align: center;
+    font-size: 25px;
+}
+.subTitle_2{
+    text-align: left;
+    font-size: 20px;
+    margin-top: -20px;
+}
+section{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    padding: 0;
+    margin-top: 20px;
+    
+    /* 1. 基础边框占位 */
+    border: 8px solid transparent; /* 先设置一个透明边框 */
+    
+    /* 2. 圆角 */
+    /*border-radius: 20px;*/ /* 渐变边框不支持 50% 圆形，建议用大圆角 */
+
+    /* 3. **核心 1：渐变色边框** */
+    /* 这一步是用渐变图填充边框区域 */
+    border-image-source: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ff8177);
+    border-image-slice: 1; /* 必须设置，让边框显示 */
+
+    /* 4. **核心 2：立体感阴影** */
+    /* 因为用了 border-image，box-shadow 需要调整模糊值让其更自然 */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+hr{
+    height: 10px;
+    margin-top: 50px;
+    background-color: rgb(215, 215, 87);
+    border-radius: 20px;
+}
+/* 开启 Flexbox 弹性布局 */
+.profile-container {
+    display: flex;          /* 让子元素（图片和文字）水平并排排列 */
+    align-items: center;    /* 让头像和文字在垂直方向上居中对齐 */
+    gap: 100px;              /* 在头像和文字之间留出 20px 的间距 */
+    margin-top: 30px;       /* 与上方的副标题拉开一点距离 */
+}
+.row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+    font-size: 25px;
+}
+.row .en{
+    font-size: 20px;
+    color: #666;
+}
+a{
+    color: black;
+}
+a:hover{
+    color:blue;
+}
+footer{
+    text-align: center;
+    font-style:inherit;
+    margin-top: 200px;
+}

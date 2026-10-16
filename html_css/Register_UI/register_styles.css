@@ -1,0 +1,58 @@
+main{
+    height: 90%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color:rgb(60,60,60);
+    border-color: whitesmoke;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    padding:15px;
+}
+body{
+    background-color:rgb(30, 30, 30);
+    color: #f0f0f0;
+    height: fit-content;
+}
+footer{
+    text-align: center;
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 50px;
+}
+h1{
+    font-size: 40px;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+}
+p.front-sentence{
+    font-size: 15px;
+    font-style: initial;
+    text-align: center;
+}
+p.end-sentence{
+    font-size: 15px;
+    margin:5px;
+}
+div.assignment{
+    font-size: 15px;
+    margin: 10px;
+}
+fieldset{
+    border:0;
+    margin:20px;
+}
+div.signal-choose,.choose{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+legend.account-type,.gender{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+div.submit{
+    text-align: center;
+}

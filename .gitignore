@@ -1,0 +1,153 @@
+# ==============================================================================
+# Git Ignore Configuration for AI, Machine Learning & Full-Stack Projects
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Python & Package Managers (uv, pip, conda)
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.uv/
+uv.lock.cache/
+
+# Testing & Quality Tools
+.pytest_cache/
+.coverage
+.coverage.*
+.nyc_output/
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# ------------------------------------------------------------------------------
+# 2. PyTorch, Deep Learning & Model Artifacts (严禁大模型权重入库)
+# ------------------------------------------------------------------------------
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.ckpt
+*.h5
+*.tflite
+checkpoints/
+runs/
+wandb/
+.tensorboard/
+mlruns/
+
+# ------------------------------------------------------------------------------
+# 3. Datasets & Large Data Files
+# ------------------------------------------------------------------------------
+data/
+datasets/
+raw_data/
+processed_data/
+*.parquet
+*.feather
+*.tar.gz
+*.tar
+*.zip
+*.7z
+*.gz
+
+# ------------------------------------------------------------------------------
+# 4. Jupyter Notebook & Streamlit
+# ------------------------------------------------------------------------------
+.ipynb_checkpoints
+*-checkpoint.ipynb
+.streamlit/secrets.toml
+
+# ------------------------------------------------------------------------------
+# 5. Web, Node.js & Frontend Artifacts (若有拓展)
+# ------------------------------------------------------------------------------
+node_modules/
+jspm_packages/
+.npm
+dist/
+out/
+.next/
+.nuxt/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------------------------------------------------------
+# 6. Environment Variables & Secret Credentials (机密安全)
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+secrets.json
+api_keys.py
+
+# ------------------------------------------------------------------------------
+# 7. Operating System & IDE Specific Files
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# JetBrains (PyCharm, IntelliJ, etc.)
+.idea/
+*.iws
+*.iml
+
+# Visual Studio Code (保留 settings.json 供团队协作，其余忽略)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Logs & Temporary files
+*.log
+logs/
+tmp/
+temp/
