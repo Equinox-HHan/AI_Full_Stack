@@ -53,8 +53,13 @@
 ├── .gitignore                  # 工业级 Python / PyTorch / Web 忽略规则配置
 │
 ├── learning_file/              # 核心工程化操作指南与语法速查手册
-│   ├── git_workflow_guide.md   # Git 与 GitHub 完整工程化操作指南 (工作区/分支/PR/CR/Actions)
-│   ├── shell_basics_guide.md   # Shell 基础与现代开发者工具指南 (Bash + PowerShell + GPU监控 + uv)
+│   ├── modern_python_and_uv_guide.md       # Phase 0 W1: 现代 Python 3.12+ 与 uv 极速包管理器工程指南
+│   ├── python_oop_and_typing_guide.md      # Phase 0 W1: Python 面向对象、魔术方法与类型系统指南
+│   ├── python_decorators_and_functional_guide.md # Phase 0 W1: 闭包机制与生产级装饰器实战手册
+│   ├── python_async_programming_guide.md   # Phase 0 W1: asyncio 异步协程与现代高并发深度解析
+│   ├── phase0_week1_hands_on_project.md    # Phase 0 W1: 第一周现代工具箱项目动手实战 (AI-Toolkit)
+│   ├── git_workflow_guide.md   # Phase 0 W2: Git 与 GitHub 完整工程化操作指南 (工作区/分支/PR/CR/Actions)
+│   ├── shell_basics_guide.md   # Phase 0 W2: Shell 基础与现代开发者工具指南 (Bash + PowerShell + GPU监控 + uv)
 │   ├── markdown_syntax_guide.md# Markdown 完整语法与 LaTeX/Mermaid/GitHub Alerts 规范
 │   ├── html_syntax_guide.md    # HTML5 完整语法与语义化规范指南 (标签/表单/多媒体/无障碍)
 │   └── css_syntax_guide.md     # CSS3 完整语法与现代响应式布局指南 (Flexbox/Grid/变量/媒体查询)
@@ -68,8 +73,18 @@
 
 ## 📚 开发者操作指南索引 (`learning_file/`)
 
-仓库精选并沉淀了 5 份极为详尽的操作与语法指南，帮助你在学习过程中随时随地秒查指令与规范：
+仓库沉淀了详尽的高质量工程操作指南、语法手册与动手实战教程，帮助你在学习过程中随时随地秒查指令与规范：
 
+### Phase 0 第 1 周专属学习资料与动手指南
+| 指南文档 | 涵盖核心内容 | 重点价值与推荐查阅场景 |
+| :--- | :--- | :--- |
+| 🐍 **[`modern_python_and_uv_guide.md`](learning_file/modern_python_and_uv_guide.md)** | `uv` 底层架构原理、多版本 Python 管理、秒级虚拟环境 (`uv venv`)、`pyproject.toml` 规范、VS Code 黄金开发配置与国内源加速 | 告别臃肿 Anaconda，从零建立极速纯净的现代化 Python 3.12+ 开发环境 |
+| 🧩 **[`python_oop_and_typing_guide.md`](learning_file/python_oop_and_typing_guide.md)** | 类与实例、`@property`、核心魔术方法 (`__call__`, `__len__`, `__getitem__`, `__enter__`)、Python 3.12 原生泛型、Type Hints 强类型 | 彻底看懂 PyTorch (`Dataset`, `nn.Module`) 底层原理与面向协议架构 |
+| ⚡ **[`python_decorators_and_functional_guide.md`](learning_file/python_decorators_and_functional_guide.md)** | 一等公民函数、LEGB 作用域、闭包内存原理、装饰器推导、`@functools.wraps`、生产级 `@timer` 与 API 指数退避 `@retry` | 掌握现代 Python 高级元编程，消除冗余代码，构建高容灾 API 客户端 |
+| 🔄 **[`python_async_programming_guide.md`](learning_file/python_async_programming_guide.md)** | 进程/线程/协程模型辨析、事件循环机制、`async/await`、`TaskGroup` 结构化并发、超时熔断与异步避坑指南 | 为 FastAPI 高性能服务化、大模型流式响应与 Agent 并发工具调用打牢底盘 |
+| 🛠️ **[`phase0_week1_hands_on_project.md`](learning_file/phase0_week1_hands_on_project.md)** | 从零用 `uv` 搭建 `ai_toolkit` 库脚手架、实现类型化装饰器、魔术方法批处理容器、异步并发评测与 Ruff 门禁检查 | 第 1 周必做动手任务，检验学习成果，产出规范工程代码 |
+
+### 核心通用工具与历史拓展参考
 | 指南文档 | 涵盖核心内容 | 重点价值与推荐查阅场景 |
 | :--- | :--- | :--- |
 | 📘 **[`git_workflow_guide.md`](learning_file/git_workflow_guide.md)** | 四大工作区、Conventional Commits 提交规范、分支策略、Pull Request 流程、Code Review 准则、GitHub Actions CI/CD、Windows 中文路径防乱码配置 | 团队协作、提交代码、规避代码冲突与工程化规范必备 |
