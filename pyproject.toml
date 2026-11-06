@@ -8,3 +8,8 @@ dependencies = [
     "dataclasses>=0.8",
     "requests>=2.34.2",
 ]
+
+[tool.uv.workspace]
+members = [
+    "Full_Stack_phase0",
+]
