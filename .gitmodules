@@ -1,3 +1,6 @@
 [submodule "Full_Stack_phase0"]
 	path = Full_Stack_phase0
 	url = https://github.com/Equinox-HHan/Full_Stack_phase0.git
+[submodule "Full_Stack_phase1"]
+	path = Full_Stack_phase1
+	url = https://github.com/Equinox-HHan/Full_Stack_phase1.git
